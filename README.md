@@ -48,19 +48,6 @@ The provided [Anki flashcard decks](https://apps.ankiweb.net/) use spaced repeti
 
 Great for use while on-the-go.
 
-### Coding Resource: Interactive Coding Challenges
-
-Looking for resources to help you prep for the [**Coding Interview**](https://github.com/donnemartin/interactive-coding-challenges)?
-
-<p align="center">
-  <img src="images/b4YtAEN.png">
-  <br/>
-</p>
-
-Check out the sister repo [**Interactive Coding Challenges**](https://github.com/donnemartin/interactive-coding-challenges), which contains an additional Anki deck:
-
-- [Coding deck](https://github.com/donnemartin/interactive-coding-challenges/tree/master/anki_cards/Coding.apkg)
-
 ## Index of system design topics
 
 > Summaries of various system design topics, including pros and cons. **Everything is a trade-off**.
@@ -275,7 +262,6 @@ Check out the following links to get a better idea of what to expect:
 | Design a key-value store for a search engine                         | [Solution](solutions/system_design/query_cache/README.md)  |
 | Design Amazon's sales ranking by category feature                    | [Solution](solutions/system_design/sales_rank/README.md)   |
 | Design a system that scales to millions of users on AWS              | [Solution](solutions/system_design/scaling_aws/README.md)  |
-| Add a system design question                                         | [Contribute](#contributing)                                |
 
 ### Design Pastebin.com (or Bit.ly)
 
@@ -1502,7 +1488,7 @@ REST is focused on exposing data. It minimizes the coupling between client/serve
 
 - With REST being focused on exposing data, it might not be a good fit if resources are not naturally organized or accessed in a simple hierarchy. For example, returning all updated records from the past hour matching a particular set of events is not easily expressed as a path. With REST, it is likely to be implemented with a combination of URI path, query parameters, and possibly the request body.
 - REST typically relies on a few verbs (GET, POST, PUT, DELETE, and PATCH) which sometimes doesn't fit your use case. For example, moving expired documents to the archive folder might not cleanly fit within these verbs.
-- Fetching complicated resources with nested hierarchies requires multiple round trips between the client and server to render single views, e.g. fetching content of a blog entry and the comments on that entry. For mobile applications operating in variable network conditions, these multiple roundtrips are highly undesirable.
+- Fetching complicated resources with nested hierarchies requires multiple round trips between the client and server to render single views, e.g. fetching content of a blog entry and the comments on that entry. For mobile applications operating in variable network conditions, these multiple round-trips are highly undesirable.
 - Over time, more fields might be added to an API response and older clients will receive all new data fields, even those that they do not need, as a result, it bloats the payload size and leads to larger latencies.
 
 ### RPC and REST calls comparison
@@ -1649,7 +1635,6 @@ Handy metrics based on numbers above:
 | Design a garbage collection system                          | [stuffwithstuff.com](http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/)<br/>[washington.edu](http://courses.cs.washington.edu/courses/csep521/07wi/prj/rick.pdf)                                                                                                                                                                                                                                                                  |
 | Design an API rate limiter                                  | [https://stripe.com/blog/](https://stripe.com/blog/rate-limiters)                                                                                                                                                                                                                                                                                                                                                                                           |
 | Design a Stock Exchange (like NASDAQ or Binance)            | [Jane Street](https://youtu.be/b1e4t2k2KJY)<br/>[Golang Implementation](https://around25.com/blog/building-a-trading-engine-for-a-crypto-exchange/)<br/>[Go Implementation](http://bhomnick.net/building-a-simple-limit-order-in-go/)                                                                                                                                                                                                                       |
-| Add a system design question                                | [Contribute](#contributing)                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 ### Real world architectures
 
@@ -1689,7 +1674,7 @@ Handy metrics based on numbers above:
 | Misc            | **Dapper** - Distributed systems tracing infrastructure                          | [research.google.com](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36356.pdf)                                |
 | Misc            | **Kafka** - Pub/sub message queue from LinkedIn                                  | [slideshare.net](http://www.slideshare.net/mumrah/kafka-talk-tri-hug)                                                                          |
 | Misc            | **Zookeeper** - Centralized infrastructure and services enabling synchronization | [slideshare.net](http://www.slideshare.net/sauravhaloi/introduction-to-apache-zookeeper)                                                       |
-|                 | Add an architecture                                                              | [Contribute](#contributing)                                                                                                                    |
+|                 |
 
 ### Company architectures
 
@@ -1728,26 +1713,15 @@ Handy metrics based on numbers above:
 - [Airbnb Engineering](http://nerds.airbnb.com/)
 - [Atlassian Developers](https://developer.atlassian.com/blog/)
 - [AWS Blog](https://aws.amazon.com/blogs/aws/)
-- [Bitly Engineering Blog](http://word.bitly.com/)
-- [Box Blogs](https://blog.box.com/blog/category/engineering)
-- [Cloudera Developer Blog](http://blog.cloudera.com/)
 - [Dropbox Tech Blog](https://tech.dropbox.com/)
 - [Engineering at Quora](https://www.quora.com/q/quoraengineering)
-- [Ebay Tech Blog](http://www.ebaytechblog.com/)
-- [Evernote Tech Blog](https://blog.evernote.com/tech/)
 - [Etsy Code as Craft](http://codeascraft.com/)
 - [Facebook Engineering](https://www.facebook.com/Engineering)
-- [Flickr Code](http://code.flickr.net/)
-- [Foursquare Engineering Blog](http://engineering.foursquare.com/)
 - [GitHub Engineering Blog](https://github.blog/category/engineering)
 - [Google Research Blog](http://googleresearch.blogspot.com/)
 - [Groupon Engineering Blog](https://engineering.groupon.com/)
-- [Heroku Engineering Blog](https://engineering.heroku.com/)
-- [Hubspot Engineering Blog](http://product.hubspot.com/blog/topic/engineering)
 - [High Scalability](http://highscalability.com/)
 - [Instagram Engineering](http://instagram-engineering.tumblr.com/)
-- [Intel Software Blog](https://software.intel.com/en-us/blogs/)
-- [Jane Street Tech Blog](https://blogs.janestreet.com/category/ocaml/)
 - [LinkedIn Engineering](http://engineering.linkedin.com/blog)
 - [Microsoft Engineering](https://engineering.microsoft.com/)
 - [Microsoft Python Engineering](https://blogs.msdn.microsoft.com/pythonengineering/)
@@ -1763,51 +1737,9 @@ Handy metrics based on numbers above:
 - [Uber Engineering Blog](http://eng.uber.com/)
 - [Yahoo Engineering Blog](http://yahooeng.tumblr.com/)
 - [Yelp Engineering Blog](http://engineeringblog.yelp.com/)
-- [Zynga Engineering Blog](https://www.zynga.com/blogs/engineering)
 
 #### Source(s) and further reading
 
 Looking to add a blog? To avoid duplicating work, consider adding your company blog to the following repo:
 
 - [kilimchoi/engineering-blogs](https://github.com/kilimchoi/engineering-blogs)
-
-## Under development
-
-Interested in adding a section or helping complete one in-progress? [Contribute](#contributing)!
-
-- Distributed computing with MapReduce
-- Consistent hashing
-- Scatter gather
-- [Contribute](#contributing)
-
-## Credits
-
-Credits and sources are provided throughout this repo.
-
-Special thanks to:
-
-- [Hired in tech](http://www.hiredintech.com/system-design/the-system-design-process/)
-- [Cracking the coding interview](https://www.amazon.com/dp/0984782850/)
-- [High scalability](http://highscalability.com/)
-- [checkcheckzz/system-design-interview](https://github.com/checkcheckzz/system-design-interview)
-- [shashank88/system_design](https://github.com/shashank88/system_design)
-- [mmcgrana/services-engineering](https://github.com/mmcgrana/services-engineering)
-- [System design cheat sheet](https://gist.github.com/vasanthk/485d1c25737e8e72759f)
-- [A distributed systems reading list](http://dancres.github.io/Pages/)
-- [Cracking the system design interview](http://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview)
-
-## Contact info
-
-Feel free to contact me to discuss any issues, questions, or comments.
-
-My contact info can be found on my [GitHub page](https://github.com/donnemartin).
-
-## License
-
-_I am providing code and resources in this repository to you under an open source license. Because this is my personal repository, the license you receive to my code and resources is from me and not my employer (Facebook)._
-
-    Copyright 2017 Donne Martin
-
-    Creative Commons Attribution 4.0 International License (CC BY 4.0)
-
-    http://creativecommons.org/licenses/by/4.0/
